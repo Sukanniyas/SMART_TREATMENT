@@ -1,0 +1,28 @@
+.stars {
+    display: inline-block;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    float: right;
+    padding: 2px;
+    font-size: 24px;
+    color: #D6D5D5;
+    transition: all .2s;
+}
+
+.stars label:before {
+    content: '\2605';
+}
+
+.stars input:checked ~ label:before {
+    color: gold;
+    transition: all .25s;
+}
+
+.stars label:hover {
+    transform: scale(1.3);
+}
